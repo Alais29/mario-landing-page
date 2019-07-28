@@ -53,6 +53,7 @@ GRID
 }
 
 .row {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 50px;
@@ -66,10 +67,19 @@ HEADER
 
 header {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: red;
   position: fixed;
   top: 0;
@@ -77,8 +87,13 @@ header {
 }
 
 .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .nav-item {
@@ -88,6 +103,12 @@ header {
 .nav-link {
   color: white;
   padding: 0.5em 2em;
+  -webkit-transition-property: color, text-shadow;
+  -o-transition-property: color, text-shadow;
+  transition-property: color, text-shadow;
+  -webkit-transition-duration: .3s;
+       -o-transition-duration: .3s;
+          transition-duration: .3s;
 }
 
 .nav-link:hover {
@@ -106,26 +127,41 @@ MAIN
 ============
 */
 
-.main__title-container {
+.main__title {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.main__title {
-  margin: 0;
-  padding: 1em;
-  font-size: 3em;
+.main__title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 480px;
   background-color: #f4f3f4;
   border-radius: 10px;
-  box-shadow: 9px 9px 17px 0px rgba(0, 0, 0, 0.67);
+  -webkit-box-shadow: 9px 9px 17px 0px rgba(0, 0, 0, 0.67);
+          box-shadow: 9px 9px 17px 0px rgba(0, 0, 0, 0.67);
+}
+
+.main__title-text {
+  margin: 0;
+  font-size: 3em;
+  text-align: center;
+  padding: .5em .3em;
 }
 
 main {
   margin-top: 75px;
   min-height: 100vh;
-  background-image: url("https://thewallpaper.co//wp-content/uploads/2016/10/mario-wallpaper-hd-images-photos-hd-background-wallpapers-free-amazing-cool-smart-phone-4k-high-definition-1920x1080.jpg");
+  background-image: url("https://www.3djuegos.com/juegos/14037/mario_switch/fotos/maestras/mario_switch-3755928.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -147,14 +183,20 @@ OCCUPATIONS
 .section__content {
   background-color: #f4f3f4;
   border-radius: 10px;
-  box-shadow: 9px 9px 17px 0px rgba(0, 0, 0, 0.67);
+  -webkit-box-shadow: 9px 9px 17px 0px rgba(0, 0, 0, 0.67);
+          box-shadow: 9px 9px 17px 0px rgba(0, 0, 0, 0.67);
   padding: 1em 2em;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .occupation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .occupation p {
@@ -186,13 +228,21 @@ POWER UPS
   background-color: #f4f3f4;
   text-align: center;
   color: black;
+  -webkit-box-shadow: 9px 9px 17px 0px rgba(0, 0, 0, 0.67);
+          box-shadow: 9px 9px 17px 0px rgba(0, 0, 0, 0.67);
 }
 
 .card__image {
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -204,7 +254,8 @@ POWER UPS
 
 .card__body {
   padding: 0 1em;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .card__body h3 {
@@ -218,22 +269,36 @@ FORM
 */
 
 #form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #email {
   border: none;
   border-radius: 10px;
   padding: 1em;
-  box-sizing: border-box;
-  flex-basis: 300px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  -o-transition-property: box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: .2s;
+       -o-transition-duration: .2s;
+          transition-duration: .2s;
 }
 
 #email:focus {
   -webkit-box-shadow: 0px 0px 11px 0px rgb(244,243,244, 1);
-  -moz-box-shadow: 0px 0px 11px 0px rgb(244,243,244, 1);
   box-shadow: 0px 0px 11px 0px rgb(244,243,244, 1);
 }
 
@@ -244,10 +309,18 @@ FORM
   color: white;
   font-family: "Concert One", cursive;
   font-size: 1.1em;
-  flex-basis: 300px;
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
   padding: 0.6em;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-top: 10px;
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: .3s;
+       -o-transition-duration: .3s;
+          transition-duration: .3s;
 }
 
 .btn:hover {
@@ -270,6 +343,12 @@ footer {
 
 .footer__link {
   color: white;
+  -webkit-transition-property: color, text-shadow;
+  -o-transition-property: color, text-shadow;
+  transition-property: color, text-shadow;
+  -webkit-transition-duration: .3s;
+       -o-transition-duration: .3s;
+          transition-duration: .3s;
 }
 
 .footer__link:hover {
@@ -291,13 +370,23 @@ MEDIA QUERIES
   */
 
   header {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .navigation {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   #header-img {
@@ -308,16 +397,31 @@ MEDIA QUERIES
 @media screen and (min-width: 650px) {
   /*
   ============
+  MAIN
+  ============
+  */
+  
+  main {
+    background-image: url("https://thewallpaper.co//wp-content/uploads/2016/10/mario-wallpaper-hd-images-photos-hd-background-wallpapers-free-amazing-cool-smart-phone-4k-high-definition-1920x1080.jpg");
+  }
+  
+  /*
+  ============
   HEADER
   ============
   */
 
   header {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .navigation {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 
   #header-img {
@@ -332,7 +436,8 @@ MEDIA QUERIES
   ============
   */
   .btn {
-    flex-basis: 150px;
+    -ms-flex-preferred-size: 150px;
+        flex-basis: 150px;
     margin-top: 0;
     margin-left: 20px;
   }
