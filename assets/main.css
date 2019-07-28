@@ -1,0 +1,174 @@
+/*
+============
+GENERAL
+============
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Concert One", cursive;
+  background-color: #c2352d;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Russo One", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 3em 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*
+============
+GRID
+============
+*/
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 50px;
+}
+
+/*
+============
+HEADER
+============
+*/
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.navigation {
+  display: flex;
+}
+
+.nav-item {
+  padding: 0.5em 0;
+}
+
+.nav-link {
+  color: white;
+  padding: 0.5em 2em;
+}
+
+#header-img {
+  width: 70px;
+  padding-left: 2em;
+}
+
+/*
+============
+MAIN
+============
+*/
+
+.main__title-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.main__title {
+  margin: 0;
+  padding: 1em;
+  font-size: 3em;
+  background-color: #f4f3f4;
+  border-radius: 10px;
+  box-shadow: 9px 9px 17px 0px rgba(0, 0, 0, 0.67);
+}
+
+main {
+  margin-top: 75px;
+  min-height: 100vh;
+  background-image: url("https://thewallpaper.co//wp-content/uploads/2016/10/mario-wallpaper-hd-images-photos-hd-background-wallpapers-free-amazing-cool-smart-phone-4k-high-definition-1920x1080.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*
+============
+OCCUPATIONS
+============
+*/
+
+.section__title {
+  color: white;
+  text-align: center;
+  text-shadow: 3px 3px 10px black;
+}
+
+.section__content {
+  background-color: #f4f3f4;
+  border-radius: 10px;
+  box-shadow: 9px 9px 17px 0px rgba(0, 0, 0, 0.67);
+  padding: 1em 2em;
+  box-sizing: border-box;
+}
+
+.occupation {
+  display: flex;
+  align-items: center;
+}
+
+.occupation p {
+  margin-left: 1em;
+}
+
+.occupation i {
+  color: #08469E;
+}
+
+/*
+============
+ADVENTURES
+============
+*/
+
+.section__content--center {
+  text-align: center;
+}
+
+/*
+============
+POWER UPS
+============
+*/
+
+

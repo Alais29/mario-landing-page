@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mario</title>
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Concert+One|Russo+One&display=swap" rel="stylesheet">
+
+  <!-- my css -->
+  <link rel="stylesheet" href="assets/main.css">
+</head>
+
+<body>
+
+  <header id="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Mario_emblem.svg/368px-Mario_emblem.svg.png"
+      alt="" id="header-img">
+
+    <nav id="nav-bar">
+      <ul class="navigation">
+        <li class="nav-item"><a href="#occupations" class="nav-link">Occupations</a></li>
+        <li class="nav-item"><a href="#adventures" class="nav-link">Adventures</a></li>
+        <li class="nav-item"><a href="#power-ups" class="nav-link">Power-ups</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container main__title-container">
+      <h1 class="main__title">It's me! Mario!</h1>
+    </div>
+  </main>
+
+  <section id="occupations">
+    <div class="container">
+      <h2 class="section__title">Occupations</h2>
+      <div class="section__content">
+        <div class="occupation">
+          <i class="fas fa-tools fa-2x"></i>
+          <p>I first made a name for myself in the plumbing business, fixing pipes and such around the Mushroom Kingdom
+          </p>
+        </div>
+        <div class="occupation">
+          <i class="fas fa-user-md fa-2x"></i>
+          <p>Later I was also known as Dr. Mario, I fought several viruses during my career</p>
+        </div>
+        <div class="occupation">
+          <i class="fas fa-golf-ball fa-2x"></i>
+          <p>Besides jumping on top of goombas and koopas I also practice several sports like tennis, golf, karting, I
+            even
+            participated on the Olympic Games!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="adventures">
+    <div class="container">
+      <h2 class="section__title">Adventures</h2>
+      <div class="section__content section__content--center">
+        <p>¡Here's a glance of my latest adventure!</p>
+        <iframe width="80%" height="315" src="https://www.youtube.com/embed/wGQHQc_3ycE" id="video"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="power-ups">
+    <div class="container">
+      <h2 class="section__title">Power-ups</h2>
+      <div class="row">
+        <div class="card">
+          <div class="card__image">
+            <img
+              src="https://vignette.wikia.nocookie.net/nintendo/images/5/5b/Mushroom1.jpg/revision/latest?cb=20111104224030&path-prefix=en"
+              alt="">
+          </div>
+          <div class="card__body">
+            <h3>Super Mushroom</h3>
+            <p>It makes me grow big and Strong!</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img
+              src="https://vignette.wikia.nocookie.net/mariokart/images/f/fc/Fire_Flower_-_Mario_Kart_Wii.png/revision/latest?cb=20170719161036"
+              alt="">
+          </div>
+          <div class="card__body">
+            <h3>Fire Flower</h3>
+            <p>It allows me to throw fireballs at enemys!</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img
+              src="https://vignette.wikia.nocookie.net/nintendo/images/2/2e/Star.png/revision/latest/scale-to-width-down/310?cb=20150501195537&path-prefix=en"
+              alt="">
+          </div>
+          <div class="card__body">
+            <h3>Starman </h3>
+            <p>It makes me totally invincible for a few seconds!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <div class="container">
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="GET">
+        <label for="email">Want to know more about me?</label>
+        <input type="email" placeholder="Enter your email address" id="email">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Written and coded by Alfonsina Lizardo</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
