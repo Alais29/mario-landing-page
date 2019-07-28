@@ -84,6 +84,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  text-align: center;
 }
 
 .navigation {
@@ -97,12 +98,12 @@ header {
 }
 
 .nav-item {
-  padding: 0.5em 0;
+  padding: 0.2em 0;
 }
 
 .nav-link {
   color: white;
-  padding: 0.5em 2em;
+  padding: 0.2em 2em;
   -webkit-transition-property: color, text-shadow;
   -o-transition-property: color, text-shadow;
   transition-property: color, text-shadow;
