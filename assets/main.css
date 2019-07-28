@@ -34,7 +34,7 @@ a {
 }
 
 section {
-  padding: 3em 0;
+  padding: 4em 0 0 0;
 }
 
 img {
@@ -67,7 +67,8 @@ HEADER
 header {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: red;
   position: fixed;
@@ -77,6 +78,7 @@ header {
 
 .navigation {
   display: flex;
+  flex-direction: column;
 }
 
 .nav-item {
@@ -88,9 +90,14 @@ header {
   padding: 0.5em 2em;
 }
 
+.nav-link:hover {
+  color: #08469e;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
 #header-img {
   width: 70px;
-  padding-left: 2em;
+  padding-top: 1em;
 }
 
 /*
@@ -155,7 +162,7 @@ OCCUPATIONS
 }
 
 .occupation i {
-  color: #08469E;
+  color: #08469e;
 }
 
 /*
@@ -195,8 +202,13 @@ POWER UPS
   border-top-right-radius: 10px;
 }
 
+.card__body {
+  padding: 0 1em;
+  box-sizing: border-box;
+}
+
 .card__body h3 {
-  color: #08469E;
+  color: #08469e;
 }
 
 /*
@@ -219,15 +231,109 @@ FORM
   flex-basis: 300px;
 }
 
+#email:focus {
+  -webkit-box-shadow: 0px 0px 11px 0px rgb(244,243,244, 1);
+  -moz-box-shadow: 0px 0px 11px 0px rgb(244,243,244, 1);
+  box-shadow: 0px 0px 11px 0px rgb(244,243,244, 1);
+}
+
 .btn {
-  border: #08469E;
+  border: #08469e;
   border-radius: 10px;
-  background-color: #08469E;
+  background-color: #08469e;
   color: white;
   font-family: "Concert One", cursive;
   font-size: 1.1em;
   flex-basis: 300px;
-  padding: .6em;
+  padding: 0.6em;
   box-sizing: border-box;
   margin-top: 10px;
-} 
+}
+
+.btn:hover {
+  background-color: #052a5f;
+}
+
+/*
+============
+FOOTER
+============
+*/
+
+footer {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 0.5em 0;
+  margin-top: 4em;
+}
+
+.footer__link {
+  color: white;
+}
+
+.footer__link:hover {
+  color: #08469e;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+/*
+============
+MEDIA QUERIES
+============
+*/
+
+@media screen and (min-width: 380px) {
+  /*
+  ============
+  HEADER
+  ============
+  */
+
+  header {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navigation {
+    flex-direction: column;
+  }
+
+  #header-img {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  /*
+  ============
+  HEADER
+  ============
+  */
+
+  header {
+    justify-content: space-between;
+  }
+
+  .navigation {
+    flex-direction: row;
+  }
+
+  #header-img {
+    padding: 0.5em 0 0.5em 1.5em;
+  }
+}
+
+@media screen and (min-width: 765px) {
+  /*
+  ============
+  FORM
+  ============
+  */
+  .btn {
+    flex-basis: 150px;
+    margin-top: 0;
+    margin-left: 20px;
+  }
+}
