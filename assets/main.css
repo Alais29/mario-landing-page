@@ -3,6 +3,9 @@
 GENERAL
 ============
 */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -171,4 +174,27 @@ POWER UPS
 ============
 */
 
+.card {
+  border-radius: 10px;
+  background-color: #f4f3f4;
+  text-align: center;
+  color: black;
+}
 
+.card__image {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.rounded {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card__body h3 {
+  color: #08469E;
+}
