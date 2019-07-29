@@ -22,18 +22,24 @@
 <body>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <header id="header">
-    <a href="#main">
+    <a href="#main" class="logo">
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Mario_emblem.svg/368px-Mario_emblem.svg.png"
-        alt="" id="header-img">
+        alt="Mario logo" id="header-img">
     </a>
 
     <nav id="nav-bar">
-      <ul class="navigation">
-        <li class="nav-item"><a href="#occupations" class="nav-link">Occupations</a></li>
-        <li class="nav-item"><a href="#adventures" class="nav-link">Adventures</a></li>
-        <li class="nav-item"><a href="#power-ups" class="nav-link">Power-ups</a></li>
-        <li class="nav-item"><a href="#contact" class="nav-link">Contact me</a></li>
-      </ul>
+      <div class="navigation__collapsible">
+        <input type="checkbox" id="menu">
+        <label for="menu" class="menu"><i class="fas fa-bars"></i></label>
+        <div class="nav-container">
+          <ul class="nav-items">
+            <li class="nav-item"><a href="#occupations" class="nav-link">Occupations</a></li>
+            <li class="nav-item"><a href="#adventures" class="nav-link">Adventures</a></li>
+            <li class="nav-item"><a href="#power-ups" class="nav-link">Power-ups</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact me</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
